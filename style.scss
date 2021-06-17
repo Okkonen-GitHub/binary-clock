@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     min-height: 100vh;
     display: flex;
@@ -12,6 +11,7 @@ body {
     .clock {
         height: 30vh;
         width: 60vh;
+        border-radius: .3em;
         padding: .5em;
         position: relative;
         display: grid;
@@ -25,6 +25,7 @@ body {
             justify-content: center;
             flex-direction: column;
             justify-content: center;
+            border-radius: .2em;
 
             .bin {
                 display: grid;
@@ -39,7 +40,7 @@ body {
                     height: 2em;
                     width: 2em;
                     border-radius: 50%;
-                       background-color: rgba(0, 0, 255, 0.068);
+                    background-color: rgba(0, 0, 255, 0.068);
 
                     &.na {
                         background-color: transparent;
