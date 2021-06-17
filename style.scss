@@ -42,9 +42,9 @@ span {
     border-radius: 50%;
     background-color: rgba(0, 0, 255, 0.068);
 }
-.na {
+&.na {
     background-color: transparent;
 }
-.light{
+&.light{
     background: #eff0f1;
 }
