@@ -1,6 +1,5 @@
 body {
 	margin: 0;
-	padding: 0;
 	box-sizing: border-box;
 	min-height: 100vh;
 	display: flex;
@@ -13,6 +12,7 @@ body {
 .clock {
 	height: 30vh;
 	width: 60vh;
+	border-radius: .3em;
 	padding: .5em;
 	position: relative;
 	display: grid;
@@ -27,11 +27,13 @@ body {
 	justify-content: center;
 	flex-direction: column;
 	justify-content: center;
+	border-radius: .2em;
 }
 
 .clock .category .bin {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 3em;
 	align-items: center;
 	justify-content: center;
 	height: 100%;
