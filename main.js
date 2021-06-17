@@ -20,7 +20,9 @@ const toBinary = (number) => Number(number).toString(2)
 
 const splitTime = (time) => {
     const no = time.toString().split("")
-    if (no.length === 1) no = [0,no[0]]
+    if (no.length === 1) {
+        no = [0,no[0]]
+    }
 
     return {
         b0:toBinary(no[0]),
@@ -31,7 +33,7 @@ const splitTime = (time) => {
 
 const paintClock = (binTime,ninche,category) => {
     binTime.split("").reverse().forEach((bin,index) => {
-        const dom = Array.from(document.querySelectorAll('.${category} .bin span.${ninche}')).reverse()
+        const dom = Array.from(document.querySelectorAll(`.${category} .bin span.${ninche}`)).reverse()
         console.log(dom)
         if(bin === 1) {
             const light = dom[index]
