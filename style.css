@@ -35,10 +35,9 @@ body {
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 3em;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	height: 100%;
 	width: 100%;
-	grid-gap: 3em;
 }
 
 .clock .category .bin span {
