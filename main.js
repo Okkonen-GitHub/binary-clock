@@ -25,7 +25,7 @@ const splitTime = (time) => {
     }
 
     return {
-        b0:toBinary(no[0]),
+        b0: toBinary(no[0]),
         b1: toBinary(no[1])
 
     }
@@ -43,11 +43,9 @@ const paintClock = (binTime,ninche,category) => {
 }
 
 const clearClock = () => {
-    document.querySelectorAll(" light").forEach(light => light.classList.remove("light"))
+    document.querySelectorAll(".light").forEach(light => light.classList.remove("light"))
 }
 setInterval(() => {
     clearClock()
     binaryClock()
-},100)
-
-binaryClock()
+}, 1000)
